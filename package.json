@@ -9,7 +9,7 @@
     "react-dom": "^16.7.0",
     "react-flexbox-grid": "^2.1.2",
     "tslib": "^1.9.3",
-    "webpack-dev-server": ">=3.1.11"
+    "webpack-dev-server": "^3.1.11"
   },
   "scripts": {
     "start": "react-scripts-ts start",
