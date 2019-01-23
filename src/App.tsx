@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
+import Index from './scenes/Index';
 
 class App extends React.Component {
   public render() {
-    return <div>Hello world!</div>;
+    return <Index />;
   }
 }
 
