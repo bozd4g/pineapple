@@ -3,7 +3,11 @@ import Index from './scenes/Index';
 
 class App extends React.Component {
   public render() {
-    return <Index />;
+    return (
+      <div style={{ height: '100vh', background: '#f5f5f5' }}>
+        <Index />
+      </div>
+    );
   }
 }
 
