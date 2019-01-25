@@ -10,3 +10,23 @@
   width: 100%;
   line-height: 0px;
 }
+
+.happening {
+  color: #464242;
+  text-align: center;
+}
+
+.happening .inline {
+  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-top: 3%;
+}
+
+.happening .inline.light {
+  font-weight: 300;
+}
+
+.happening .inline.bold {
+  font-weight: 800;
+}

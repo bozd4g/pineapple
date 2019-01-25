@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,800');
+
+.title {
+  position: fixed;
+  color: white;
+  top: 5%;
+  margin-left: 5%;
+  z-index: 999;
+}
+
+.title .inline {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.title .inline.name {
+  font-weight: 500;
+}
+
+.title .inline.surname {
+  font-weight: 800;
+}
