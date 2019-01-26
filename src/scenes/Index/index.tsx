@@ -1,7 +1,8 @@
 import React from 'react';
-import { Row } from 'react-flexbox-grid';
+import { Row, Col } from 'react-flexbox-grid';
 import ReactSVG from 'react-svg';
-import indexSVG from '../../images/index.svg';
+import IndexSVG from '../../images/index.svg';
+import KeepCalm from '../../components/KeepCalm';
 import './index.css';
 
 class Index extends React.Component {
@@ -9,40 +10,13 @@ class Index extends React.Component {
     return (
       <div>
         <Row className="main" style={{ background: `linear-gradient(45deg, ${'#A83279, #FFB246'})` }}>
-          <div className="about">
-            <h1 className="bigTitle">it's me.</h1>
-            <div className="information">
-              <h2 className="first">hey, keep calm!</h2>
-              <h2 className="second">It's me.</h2>
-              <p>As you said, I'm Furkan.</p>
-              <p>
-                If I have to introduce myself; I’m designing as hobby, coding as lovely and sometimes writing something at somewhere like
-                <b>
-                  <a href="#" rel="noopener noreferrer" target="_blank">
-                    {' '}
-                    twitter
-                  </a>
-                </b>
-                ,
-                <b>
-                  <a href="#" rel="noopener noreferrer" target="_blank">
-                    {' '}
-                    medium
-                  </a>
-                </b>{' '}
-                and
-                <b>
-                  <a href="#" rel="noopener noreferrer" target="_blank">
-                    {' '}
-                    github
-                  </a>
-                </b>
-                .
-              </p>
-            </div>
-          </div>
-
-          <ReactSVG src={indexSVG} className="separator" />
+          <Row style={{ width: '100%' }}>
+            <Col xs={6}>This side will be introduction image</Col>
+            <Col xs={6}>
+              <KeepCalm />
+            </Col>
+          </Row>
+          <ReactSVG src={IndexSVG} className="separator" />
         </Row>
 
         <div className="happening">
