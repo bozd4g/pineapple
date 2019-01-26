@@ -34,8 +34,24 @@ class Index extends React.Component {
           imagePath="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg"
           date={new Date('01/27/2018')}
         />
-
-        <div style={{ height: 500 }} />
+        <Post
+          title="Basit Tut, Aptal!"
+          description="Bugün hayatımızın her yanında olan, o olmadan hayatımızı daha kolay
+          şekilde devam ettirmemizin çok zor olduğu bir yaklaşımı/kavramı açıklamak
+          istiyorum. Yazılım geliştiricilerin çoğunun aşina olduğu bir prensip.
+          KISS (Keep it simple, stupid) yani Basit tut, aptal!."
+          imagePath="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg"
+          date={new Date('01/27/2018')}
+        />
+        <Post
+          title="Basit Tut, Aptal!"
+          description="Bugün hayatımızın her yanında olan, o olmadan hayatımızı daha kolay
+          şekilde devam ettirmemizin çok zor olduğu bir yaklaşımı/kavramı açıklamak
+          istiyorum. Yazılım geliştiricilerin çoğunun aşina olduğu bir prensip.
+          KISS (Keep it simple, stupid) yani Basit tut, aptal!."
+          imagePath="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg"
+          date={new Date('01/27/2018')}
+        />
       </div>
     );
   }
