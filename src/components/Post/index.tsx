@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
+import Button from '@material-ui/core/Button';
+import './index.css';
 
 interface IPostProps {
   title?: string;
@@ -15,9 +17,26 @@ class Post extends React.Component<IPostProps> {
 
   render() {
     return (
-      <Row style={{ background: 'red', margin: '0 auto', width: '85%' }}>
-        <Col xs={4}>img</Col>
-        <Col xs={8}>asd</Col>
+      <Row className="post">
+        <Col xs={4} className="image">
+          <img src={this.props.imagePath} />
+        </Col>
+        <Col xs={8}>
+          <Row className="content">
+            <Row>
+              <h1>{this.props.title}</h1>
+              <p>{this.props.description}</p>
+            </Row>
+            <Row className="footer">
+              <Col xs={6}>Date</Col>
+              <Col xs={6}>
+                <Button color="inherit" className="read-more">
+                  Read More
+                </Button>
+              </Col>
+            </Row>
+          </Row>
+        </Col>
       </Row>
     );
   }

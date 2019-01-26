@@ -3,6 +3,7 @@
 .main {
   height: 80vh;
   position: relative;
+  background: linear-gradient(45deg, #a83279, #ffb246);
 }
 
 .main .separator {

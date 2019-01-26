@@ -9,8 +9,8 @@ import Post from '../../components/Post';
 class Index extends React.Component {
   render() {
     return (
-      <div>
-        <Row className="main" style={{ background: `linear-gradient(45deg, ${'#A83279, #FFB246'})` }}>
+      <div style={{ backgroundColor: '#f5f5f5' }}>
+        <Row className="main">
           <Row style={{ width: '100%' }}>
             <Col xs={6}>This side will be introduction image</Col>
             <Col xs={6}>
@@ -33,6 +33,8 @@ class Index extends React.Component {
           KISS (Keep it simple, stupid) yani Basit tut, aptal!."
           imagePath="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg"
         />
+
+        <div style={{ height: 500 }} />
       </div>
     );
   }

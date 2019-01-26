@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+
+.post {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.post .image {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.post .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05), 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.post .content {
+  position: relative;
+  display: block;
+  height: 100%;
+  /* background: red; */
+  padding: 20px 5%;
+}
+
+.post .content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  color: #464242;
+}
+
+.post .content p {
+  margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #8d8b8b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post .content .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.post .content .footer .read-more {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  float: right;
+  color: #fdb045;
+}
