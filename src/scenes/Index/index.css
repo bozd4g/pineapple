@@ -23,7 +23,8 @@
   font-size: 4em;
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
-  margin: 3% 0;
+  margin-top: 2%;
+  margin-bottom: 4%;
 }
 
 .happening .inline.light {
