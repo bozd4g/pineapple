@@ -1,6 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import Button from '@material-ui/core/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
+import { timeDistance } from '../../utils/dateHelper';
 import './index.css';
 
 interface IPostProps {
@@ -28,7 +31,10 @@ class Post extends React.Component<IPostProps> {
               <p>{this.props.description}</p>
             </Row>
             <Row className="footer">
-              <Col xs={6}>Date</Col>
+              <Col xs={6} className="date">
+                <FontAwesomeIcon icon={faCalendarDay} />
+                <p>{timeDistance(this.props.date)}</p>
+              </Col>
               <Col xs={6}>
                 <Button color="inherit" className="read-more">
                   Read More

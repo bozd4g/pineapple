@@ -53,6 +53,16 @@
   width: 100%;
 }
 
+.post .content .footer .date {
+  color: rgba(0, 0, 0, 0.5);
+}
+.post .content .footer .date p {
+  color: #b1b1b1;
+  display: inline-block;
+  margin-left: 3%;
+  font-size: 1em;
+}
+
 .post .content .footer .read-more {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;

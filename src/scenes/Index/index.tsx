@@ -32,6 +32,7 @@ class Index extends React.Component {
           istiyorum. Yazılım geliştiricilerin çoğunun aşina olduğu bir prensip.
           KISS (Keep it simple, stupid) yani Basit tut, aptal!."
           imagePath="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg"
+          date={new Date('01/27/2018')}
         />
 
         <div style={{ height: 500 }} />
