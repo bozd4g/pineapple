@@ -4,6 +4,7 @@ import ReactSVG from 'react-svg';
 import IndexSVG from '../../images/index.svg';
 import KeepCalm from '../../components/KeepCalm';
 import './index.css';
+import Post from '../../components/Post';
 
 class Index extends React.Component {
   render() {
@@ -23,6 +24,15 @@ class Index extends React.Component {
           <h1 className="inline light">what's</h1>
           <h1 className="inline bold">happening</h1>
         </div>
+
+        <Post
+          title="Basit Tut, Aptal!"
+          description="Bugün hayatımızın her yanında olan, o olmadan hayatımızı daha kolay
+          şekilde devam ettirmemizin çok zor olduğu bir yaklaşımı/kavramı açıklamak
+          istiyorum. Yazılım geliştiricilerin çoğunun aşina olduğu bir prensip.
+          KISS (Keep it simple, stupid) yani Basit tut, aptal!."
+          imagePath="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg"
+        />
       </div>
     );
   }
