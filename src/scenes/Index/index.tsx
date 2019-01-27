@@ -5,6 +5,7 @@ import IndexSVG from '../../images/index.svg';
 import KeepCalm from '../../components/KeepCalm';
 import './index.css';
 import Post from '../../components/Post';
+import Pagination from '../../components/Pagination';
 
 class Index extends React.Component {
   render() {
@@ -52,6 +53,10 @@ class Index extends React.Component {
           imagePath="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg"
           date={new Date('01/27/2018')}
         />
+
+        <Pagination totalSize={15} eachPageSize={3} />
+
+        <div style={{ height: 100 }} />
       </div>
     );
   }
