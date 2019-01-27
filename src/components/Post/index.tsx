@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
 import { timeDistance } from '../../utils/dateHelper';
 import './index.css';
+import Image from '../Image';
 
 interface IPostProps {
   title?: string;
@@ -22,7 +23,7 @@ class Post extends React.Component<IPostProps> {
     return (
       <Row className="post">
         <Col xs={4} className="image">
-          <img src={this.props.imagePath} />
+          <Image src={this.props.imagePath} width="100%" />
         </Col>
         <Col xs={8}>
           <Row className="content">
