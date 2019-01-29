@@ -54,7 +54,7 @@ class Index extends React.Component {
           date={new Date('01/27/2018')}
         />
 
-        <Pagination totalSize={15} eachPageSize={3} />
+        <Pagination totalSize={15} eachPageSize={3} currentPage={1} />
 
         <div style={{ height: 100 }} />
       </div>
