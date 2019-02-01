@@ -1,11 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import Button from '@material-ui/core/Button';
+import Image from '../Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
 import { timeDistance } from '../../utils/dateHelper';
 import './index.css';
-import Image from '../Image';
 
 interface IPostProps {
   title?: string;
@@ -19,17 +19,21 @@ class Post extends React.Component<IPostProps> {
     super(props);
   }
 
+  getDescriptionAsEllipsis(s: string) {
+    return s.substring(0, 200) + '..';
+  }
+
   render() {
     return (
       <Row className="post">
-        <Col xs={4} className="image">
+        <Col xs={4}>
           <Image src={this.props.imagePath} width="100%" />
         </Col>
         <Col xs={8}>
           <Row className="content">
             <Row>
               <h1>{this.props.title}</h1>
-              <p>{this.props.description}</p>
+              <p>{this.getDescriptionAsEllipsis(this.props.description!)}</p>
             </Row>
             <Row className="footer">
               <Col xs={6} className="date">

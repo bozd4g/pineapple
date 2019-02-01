@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
 
 .post {
-  margin: 6% auto;
-  width: 85%;
+  margin: 5% auto;
+  max-width: 70%;
 }
 
 .post .content {
   position: relative;
   display: block;
   height: 100%;
-  /* background: red; */
-  padding: 20px 5%;
+  padding: 20px 7.5%;
 }
 
 .post .content h1 {
@@ -27,8 +26,6 @@
   font-weight: 400;
   font-size: 1.2em;
   color: #8d8b8b;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .post .content .footer {
