@@ -6,6 +6,7 @@ import KeepCalm from '../../components/KeepCalm';
 import './index.css';
 import Post from '../../components/Post';
 import Pagination from '../../components/Pagination';
+import Footer from '../../components/Footer';
 
 class Index extends React.Component {
   render() {
@@ -57,6 +58,8 @@ class Index extends React.Component {
         <Pagination totalSize={15} eachPageSize={3} currentPage={1} />
 
         <div style={{ height: 100 }} />
+
+        <Footer type="primary" />
       </div>
     );
   }
