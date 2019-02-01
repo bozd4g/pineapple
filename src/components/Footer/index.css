@@ -1,0 +1,15 @@
+.icon {
+  color: rgba(0, 0, 0, 0.54);
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.icon:hover {
+  color: black;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
