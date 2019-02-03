@@ -1,15 +1,34 @@
-.icon {
-  color: rgba(0, 0, 0, 0.54);
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
+
+.footer {
+   width: 100%;
+   height: auto;
+   margin: 0;
+}
+.footer .inner {
+   background: white;
+   padding-top: 1%;
+   padding-bottom: 3%;
+}
+.footer .inner .columns {
+   margin: 0 auto;
+   width: 70%;
+}
+.footer .inner .columns .center {
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+.footer .inner .columns .center p {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+   font-size: 1.3em;
+   color: #666464;
+}
+.footer .inner .columns .center p b {
+   font-weight: 700;
 }
 
-.icon:hover {
-  color: black;
-}
-
-.center {
-  display: flex;
-  align-items: center;
+.footer svg g#Rectangle {
+   fill: white;
 }

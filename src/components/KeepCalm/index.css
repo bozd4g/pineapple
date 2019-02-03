@@ -2,58 +2,59 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
 
 .keep-calm {
-  position: relative;
-  right: 10%;
-  height: 50%;
-  width: 100%;
-  top: 35%;
-  bottom: 25%;
+   position: relative;
+   right: 10%;
+   height: 50%;
+   width: 100%;
+   top: 35%;
+   bottom: 25%;
 }
 
 .keep-calm .bigTitle {
-  position: absolute;
-  padding-left: 8%;
-  color: rgba(0, 0, 0, 0.15);
-  z-index: 2;
-  font-size: 8.5em;
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
+   position: absolute;
+   margin-top: 3%;
+   padding-left: 8%;
+   color: rgba(0, 0, 0, 0.15);
+   z-index: 2;
+   font-size: 8.5em;
+   font-weight: 800;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .keep-calm .information {
-  position: absolute;
-  z-index: 3;
-  color: white;
-  font-size: 2.4em;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.6em;
+   position: absolute;
+   z-index: 3;
+   color: white;
+   font-size: 2.4em;
+   font-family: 'Montserrat', sans-serif;
+   line-height: 0.5em;
 }
 
 .keep-calm .information .first {
-  font-weight: 500;
+   font-weight: 500;
 }
 
 .keep-calm .information .second {
-  font-weight: 700;
-  margin-bottom: 5vh;
+   font-weight: 700;
+   margin-bottom: 5vh;
 }
 
 .keep-calm .information p {
-  font-size: 0.5em;
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.2em;
-  color: rgba(255, 255, 255, 0.7);
+   font-size: 0.5em;
+   font-weight: 400;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.2em;
+   color: rgba(255, 255, 255, 0.7);
 }
 
 .keep-calm .information p a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-  transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.7);
+   transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
 }
 
 .keep-calm .information p a:hover {
-  color: rgba(255, 255, 255, 1);
+   color: rgba(255, 255, 255, 1);
 }
