@@ -6,12 +6,15 @@ import KeepCalm from '../../components/KeepCalm';
 import Post from '../../components/Post';
 import Pagination from '../../components/Pagination';
 import Footer from '../../components/Footer';
+import Logo from '../../components/Logo';
 import './index.css';
 
 class Index extends React.Component {
    render() {
       return (
          <div style={{ backgroundColor: '#f5f5f5' }}>
+            <Logo />
+
             <Row className="main">
                <Row style={{ width: '100%' }}>
                   <Col xs={6}>This side will be introduction image</Col>
