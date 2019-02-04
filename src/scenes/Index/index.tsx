@@ -59,7 +59,7 @@ class Index extends React.Component {
 
             <div style={{ height: 100 }} />
 
-            <Footer type="primary" />
+            <Footer type="secondary" />
          </div>
       );
    }

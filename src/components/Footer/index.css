@@ -4,31 +4,40 @@
    width: 100%;
    height: auto;
    margin: 0;
+   line-height: 0;
 }
 .footer .inner {
-   background: white;
+   background: currentColor;
    padding-top: 1%;
    padding-bottom: 3%;
+   line-height: normal;
 }
 .footer .inner .columns {
    margin: 0 auto;
    width: 70%;
 }
-.footer .inner .columns .center {
-   display: flex;
-   align-items: center;
-   width: 100%;
-}
-.footer .inner .columns .center p {
+.footer .inner .columns p {
    font-family: 'Montserrat', sans-serif;
    font-weight: 500;
    font-size: 1.3em;
    color: #666464;
 }
-.footer .inner .columns .center p b {
+.footer .inner .columns p b {
    font-weight: 700;
 }
 
+.footer .inner .columns .social {
+   float: right;
+   position: relative;
+}
+
+.footer .inner .columns .social .center-icons {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 100%;
+}
+
 .footer svg g#Rectangle {
-   fill: white;
+   fill: currentColor;
 }

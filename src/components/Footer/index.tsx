@@ -14,25 +14,23 @@ class Footer extends React.Component<IFooterProps> {
    }
 
    render() {
-      return this.props.type === 'primary' ? (
-         <div className="footer">
-            <ReactSVG src={IndexSVG} />
+      return (
+         <div className="footer" style={{ color: this.props.type === 'primary' ? 'white' : 'transparent' }}>
+            <ReactSVG src={IndexSVG} style={{ display: this.props.type === 'primary' ? 'block' : 'none' }} />
             <Row className="inner">
                <Row className="columns">
-                  <Col xs={6} className="center">
+                  <Col xs={6}>
                      <p>
                         I don't know what’s happening here.
                         <br /> Anyway, here is <b>Jupiter</b>.
                      </p>
                   </Col>
-                  <Col xs={6} style={{ float: 'right' }}>
-                     <SocialIcons />
+                  <Col xs={6} className="social">
+                     <SocialIcons className="center-icons" />
                   </Col>
                </Row>
             </Row>
          </div>
-      ) : (
-         <Row>secondary</Row>
       );
    }
 }
