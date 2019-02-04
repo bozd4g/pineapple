@@ -57,9 +57,7 @@ class Index extends React.Component {
 
             <Pagination totalSize={15} eachPageSize={3} currentPage={1} />
 
-            <div style={{ height: 100 }} />
-
-            <Footer type="secondary" />
+            <Footer type="primary" />
          </div>
       );
    }
