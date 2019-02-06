@@ -4,6 +4,7 @@ import './index.css';
 interface IImageProps {
    src?: string;
    width?: string | number;
+   style?: any;
 }
 
 class Image extends React.Component<IImageProps> {
@@ -13,7 +14,7 @@ class Image extends React.Component<IImageProps> {
 
    render() {
       return (
-         <div className="image">
+         <div className="image" style={this.props.style}>
             <img src={this.props.src} style={{ width: this.props.width }} />
          </div>
       );
