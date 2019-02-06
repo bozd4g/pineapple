@@ -1,11 +1,11 @@
 import React from 'react';
-import Index from './scenes/Index';
+import Router from './components/Router';
 
 class App extends React.Component {
    public render() {
       return (
          <div style={{ height: '100vh' }}>
-            <Index />
+            <Router />
          </div>
       );
    }
