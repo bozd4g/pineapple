@@ -15,7 +15,8 @@ class Detail extends React.Component {
                </div>
                <Row center="xs" className="post-detail">
                   <Col xs={10} className="wrapper">
-                     asd
+                     <h1>Basit tut, aptal!</h1>
+                     <p>This is something for reading about 2 minutes</p>
                   </Col>
                </Row>
             </div>
