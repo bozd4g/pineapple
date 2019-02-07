@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 .detail {
    position: relative;
@@ -23,7 +23,7 @@
 }
 
 .detail .post-detail .wrapper {
-   height: 500px;
+   height: auto;
    background: white;
    border-radius: 40px;
    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05), 0 15px 30px rgba(0, 0, 0, 0.05);
@@ -37,9 +37,21 @@
    font-size: 3.5em;
    color: #464242;
 }
-.detail .post-detail .wrapper p {
+.detail .post-detail .wrapper h5 {
    color: #b1b1b1;
    font-family: 'Open Sans', sans-serif;
    font-weight: 400;
-   font-size: 1.1em;
+   font-size: 1.05em;
+}
+.detail .post-detail .wrapper p {
+   margin-top: 5%;
+   color: #6d6d6e;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   font-size: 1.2em;
+   line-height: normal;
+}
+.detail .post-detail .wrapper p b {
+   color: #464242;
+   font-weight: 600;
 }

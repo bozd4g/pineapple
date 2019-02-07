@@ -5,6 +5,7 @@ interface IImageProps {
    src?: string;
    width?: string | number;
    style?: any;
+   imageStyle?: any;
 }
 
 class Image extends React.Component<IImageProps> {
@@ -13,9 +14,12 @@ class Image extends React.Component<IImageProps> {
    }
 
    render() {
+      const imageStyle = this.props.imageStyle;
+      imageStyle.width = this.props.width;
+
       return (
          <div className="image" style={this.props.style}>
-            <img src={this.props.src} style={{ width: this.props.width }} />
+            <img src={this.props.src} style={imageStyle} />
          </div>
       );
    }
