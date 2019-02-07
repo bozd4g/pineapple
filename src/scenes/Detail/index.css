@@ -1,0 +1,14 @@
+.cover {
+   max-height: 60vh;
+   overflow: hidden;
+   object-fit: contain;
+}
+.cover img {
+   width: 100%;
+   filter: brightness(50%);
+}
+
+.detail {
+   position: relative;
+   background: white;
+}
