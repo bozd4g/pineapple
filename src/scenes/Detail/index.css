@@ -2,56 +2,77 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 .detail {
-   position: relative;
+    position: relative;
 }
 
 .detail .cover {
-   max-height: 70vh;
-   overflow: hidden;
-   object-fit: contain;
+    max-height: 70vh;
+    overflow: hidden;
+    object-fit: contain;
 }
+
 .detail .cover img {
-   width: 100%;
-   filter: brightness(50%);
+    width: 100%;
+    filter: brightness(50%);
 }
 
 .detail .post-detail {
-   width: 100%;
-   margin: 0;
-   margin-top: -30vh;
-   position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: -30vh;
+    position: relative;
 }
 
 .detail .post-detail .wrapper {
-   height: auto;
-   background: white;
-   border-radius: 40px;
-   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05), 0 15px 30px rgba(0, 0, 0, 0.05);
-   padding: 2% 4%;
-   text-align: left;
-   line-height: 15px;
+    height: auto;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05), 0 15px 30px rgba(0, 0, 0, 0.05);
+    padding: 2% 4%;
+    text-align: left;
+    line-height: 15px;
 }
+
 .detail .post-detail .wrapper h1 {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 700;
-   font-size: 3.5em;
-   color: #464242;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    color: #464242;
 }
+
 .detail .post-detail .wrapper h5 {
-   color: #b1b1b1;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 400;
-   font-size: 1.05em;
+    color: #b1b1b1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.05em;
 }
+
 .detail .post-detail .wrapper p {
-   margin-top: 5%;
-   color: #6d6d6e;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 400;
-   font-size: 1.2em;
-   line-height: normal;
+    margin-top: 5%;
+    color: #6d6d6e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: normal;
 }
+
 .detail .post-detail .wrapper p b {
-   color: #464242;
-   font-weight: 600;
+    color: #464242;
+    font-weight: 600;
+}
+
+.detail .post-detail .wrapper .date {
+    float: right;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.detail .post-detail .wrapper .date p {
+    display: inline;
+    color: #B1B1B1;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em
 }
