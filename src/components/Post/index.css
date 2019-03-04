@@ -37,6 +37,7 @@
 .post .content .bottom .date {
     color: rgba(0, 0, 0, 0.5);
 }
+
 .post .content .bottom .date p {
     color: #b1b1b1;
     display: inline-block;
@@ -50,4 +51,9 @@
     letter-spacing: 3px;
     float: right;
     color: #fdb045;
+}
+
+.post .content .bottom .read-more .link {
+    color: inherit !important;
+    text-decoration: none;
 }

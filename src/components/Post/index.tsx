@@ -5,13 +5,16 @@ import Image from '../Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
 import { timeDistance } from '../../utils/dateHelper';
+import { Link } from 'react-router-dom';
 import './index.css';
+import { slugGenerator } from '../../utils/slugGenerator';
 
 interface IPostProps {
    title?: string;
    description?: string;
    date?: Date;
    imagePath?: string;
+   history?: any;
 }
 
 class Post extends React.Component<IPostProps> {
@@ -41,9 +44,11 @@ class Post extends React.Component<IPostProps> {
                         <p>{timeDistance(this.props.date)}</p>
                      </Col>
                      <Col xs={6}>
-                        <Button color="inherit" className="read-more">
-                           Read More
-                        </Button>
+                        <Link className="link" to={slugGenerator(this.props.title!)}>
+                           <Button color="inherit" className="read-more">
+                              Read More
+                           </Button>
+                        </Link>
                      </Col>
                   </Row>
                </Row>
