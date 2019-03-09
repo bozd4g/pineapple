@@ -20,7 +20,7 @@ class Image extends React.Component<IImageProps> {
 
       return (
          <div className="image" style={this.props.style}>
-            <img src={this.props.src} style={imageStyle} />
+            <img className="cover" src={this.props.src} style={imageStyle} />
          </div>
       );
    }

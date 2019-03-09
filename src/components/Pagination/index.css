@@ -1,27 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 .pagination {
-  margin: 5% 0;
+  padding: 5% 0;
 }
 
-.pagination .items {
-  margin: 0 auto;
-}
-.pagination .items .arrow {
-  margin: 0 20px;
-}
-
-.pagination .items .MuiButtonBase-root-27.MuiFab-root-36 {
+.pagination .buttons button {
+  margin: 0 5px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
-  font-weight: 500;
-  background: transparent;
-  box-shadow: none;
   color: rgba(0, 0, 0, 0.54);
+  background: white;
 }
 
-.pagination .items .MuiButtonBase-root-27.MuiFab-root-36.active {
+.pagination .buttons .active {
   background: #ffb246;
   color: white;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
 }

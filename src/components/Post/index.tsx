@@ -1,13 +1,12 @@
 import React from 'react';
-import { Row, Col } from 'react-flexbox-grid';
-import Button from '@material-ui/core/Button';
+import { Grid, Button } from '@material-ui/core';
 import Image from '../Image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
-import { timeDistance } from '../../utils/dateHelper';
 import { Link } from 'react-router-dom';
+import { slugGenerator } from 'src/utils/slugGenerator';
 import './index.css';
-import { slugGenerator } from '../../utils/slugGenerator';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { timeDistance } from 'src/utils/dateHelper';
+import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
 
 interface IPostProps {
    title?: string;
@@ -28,7 +27,32 @@ class Post extends React.Component<IPostProps> {
 
    render() {
       return (
-         <Row className="post">
+         <Grid className="post" container alignItems="center">
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+               <Image src={this.props.imagePath} width="100%" />
+            </Grid>
+            <Grid item xs={12} sm={12} md={8} lg={8} xl={8} style={{ padding: '0 5%' }}>
+               <div className="content">
+                  <h1>{this.props.title}</h1>
+                  <p>{this.getDescriptionAsEllipsis(this.props.description!)}</p>
+               </div>
+
+               <Grid container className="bottom" alignItems="center">
+                  <Grid className="date" item xs alignItems="center">
+                     <FontAwesomeIcon icon={faCalendarDay} />
+                     <p>{timeDistance(this.props.date)}</p>
+                  </Grid>
+                  <Grid item xs>
+                     <Link className="link" to={slugGenerator(this.props.title!)}>
+                        <Button color="inherit" className="read-more">
+                           Read More
+                        </Button>
+                     </Link>
+                  </Grid>
+               </Grid>
+            </Grid>
+         </Grid>
+         /*  <Row className="post">
             <Col xs={4}>
                <Image src={this.props.imagePath} width="100%" />
             </Col>
@@ -53,7 +77,7 @@ class Post extends React.Component<IPostProps> {
                   </Row>
                </Row>
             </Col>
-         </Row>
+         </Row> */
       );
    }
 }

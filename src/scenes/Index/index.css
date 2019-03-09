@@ -1,35 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,800');
 
+
 .main {
-  height: 80vh;
-  position: relative;
   background: linear-gradient(45deg, #a83279, #ffb246);
 }
 
-.main .separator {
-  position: absolute;
-  bottom: 0px;
-  height: auto;
-  width: 100%;
-  line-height: 0px;
-}
-
 .happening {
-  color: #464242;
-  text-align: center;
-}
-
-.happening .inline {
   font-size: 4em;
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
-  margin-top: 2%;
+  text-align: center;
+  line-height: 60px;
+  color: #464242;
 }
 
-.happening .inline.light {
+
+.happening.light {
   font-weight: 300;
 }
 
-.happening .inline.bold {
+.happening.bold {
   font-weight: 800;
 }

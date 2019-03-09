@@ -1,18 +1,17 @@
 import React from 'react';
 import Footer from '../../components/Footer';
 import Logo from '../../components/Logo';
-import './index.css';
-import { Row, Col } from 'react-flexbox-grid';
+import './index.css'; /* 
 import Image from '../../components/Image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDay } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarDay } from '@fortawesome/free-solid-svg-icons'; */
 
 class Detail extends React.Component {
    render() {
-      const centerImage = {
+      /* const centerImage = {
          display: 'block',
          margin: '5% auto',
-      };
+      }; */
       return (
          <div style={{ backgroundColor: '#f5f5f5' }}>
             <Logo />
@@ -20,7 +19,7 @@ class Detail extends React.Component {
                <div className="cover">
                   <img src="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg" />
                </div>
-               <Row center="xs" className="post-detail">
+               {/* <Row center="xs" className="post-detail">
                   <Col xs={10} className="wrapper">
                      <Row>
                         <Col xs={10}>
@@ -40,7 +39,7 @@ class Detail extends React.Component {
 
                      <Image src="https://cdn-images-1.medium.com/max/1000/1*_2ynzQ0p5oCxcYOU48PujQ.jpeg" width="50%" imageStyle={centerImage} />
                   </Col>
-               </Row>
+               </Row> */}
             </div>
 
             <Footer type="secondary" />
