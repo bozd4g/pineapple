@@ -8,25 +8,31 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 import KeepCalm from '../../components/KeepCalm';
 import Footer from 'src/components/Footer';
-import Pagination from 'src/components/Pagination';
 import Post from 'src/components/Post';
+import { SyncLoader } from 'react-spinners';
 import './index.css';
 
 interface IIndexState {
-   post?: PostOutput[];
+   items?: PostOutput[];
+   loading: boolean;
 }
 class Index extends React.Component<any, IIndexState> {
    constructor(props: any) {
       super(props);
       this.state = {
-         post: undefined,
+         items: undefined,
+         loading: false,
       };
    }
 
    async componentWillMount() {
-      const data = await postService.getLastPosts();
-      this.setState({
-         post: data,
+      this.setState({ loading: true });
+      await postService.getLastPosts().then((response: PostOutput[]) => {
+         this.setState({
+            items: response,
+            loading: false,
+         });
+         console.log(response);
       });
    }
 
@@ -54,14 +60,16 @@ class Index extends React.Component<any, IIndexState> {
             </Grid>
 
             <Grid style={{ padding: '0 10%' }}>
-               {this.state.post
-                  ? this.state.post!.map((e: PostOutput) => {
-                       return <Post item={e} />;
-                    })
-                  : null}
+               {this.state.loading ? (
+                  <Grid container justify="center" alignItems="center" style={{ minHeight: 300 }}>
+                     <SyncLoader color="#20e3b2" size={20} margin="5px" />
+                  </Grid>
+               ) : this.state.items ? (
+                  this.state.items!.map((e: PostOutput) => {
+                     return <Post item={e} />;
+                  })
+               ) : null}
             </Grid>
-
-            <Pagination totalSize={15} eachPageSize={3} currentPage={1} />
 
             <Footer type="primary" />
          </div>
