@@ -2,7 +2,8 @@
 
 
 .main {
-  background: linear-gradient(45deg, #a83279, #ffb246);
+  background: linear-gradient(45deg, #0cebeb, #20e3b2, #29ffc6);
+  height: 80vh
 }
 
 .happening {
@@ -12,6 +13,8 @@
   text-align: center;
   line-height: 60px;
   color: #464242;
+  margin: 0;
+  padding: 3% 0;
 }
 
 

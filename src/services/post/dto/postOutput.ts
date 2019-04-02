@@ -1,29 +1,9 @@
-export interface IPostOutput {
-   status: string;
-   feed: IFeed;
-   items: IItem[];
-}
-
-export interface IFeed {
-   url: string;
-   title: string;
-   link: string;
-   author: string;
-   description: string;
-   image: string;
-}
-
-export interface IItem {
-   title: string;
-   pubDate: string;
-   link: string;
+export class PostOutput {
    guid: string;
-   author: string;
-   thumbnail: string;
+   link: string;
+   image: string;
+   title: string;
    description: string;
-   content: string;
-   enclosure: IEnclosure;
    categories: string[];
+   publishDate: string;
 }
-
-interface IEnclosure {}

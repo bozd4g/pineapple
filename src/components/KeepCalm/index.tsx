@@ -1,14 +1,16 @@
 import React from 'react';
+import './index.css';
+import { Grid } from '@material-ui/core';
 
 class KeepCalm extends React.Component {
    render() {
       return (
-         <div>asd</div>
-         /*  <div className="keep-calm">
-            <h1 className="bigTitle">it's me.</h1>
-            <div className="information">
+         <Grid className="keep-calm" alignItems="center" container>
+            <Grid className="title-side" container>
                <h2 className="first">hey, keep calm!</h2>
-               <h2 className="second">It's me.</h2>
+               <h1 className="second">It's me.</h1>
+            </Grid>
+            <Grid className="information" container>
                <p>As you said, I'm Furkan.</p>
                <p>
                   If I have to introduce myself; I’m designing as hobby, coding as lovely and sometimes writing something at somewhere like
@@ -31,8 +33,8 @@ class KeepCalm extends React.Component {
                   </b>
                   .
                </p>
-            </div> 
-         </div>*/
+            </Grid>
+         </Grid>
       );
    }
 }

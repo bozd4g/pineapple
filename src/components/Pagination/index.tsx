@@ -37,21 +37,6 @@ class Pagination extends React.Component<IPaginationProps> {
                <FontAwesomeIcon icon={faChevronRight} fixedWidth />
             </IconButton>
          </Grid>
-         /*  <Row className="pagination">
-            <Row className="items">
-               <IconButton className="arrow" disabled={p.currentPage === 1}>
-                  <FontAwesomeIcon icon={faChevronLeft} fixedWidth />
-               </IconButton>
-
-               <Fab className="active">1</Fab>
-               <Fab>2</Fab>
-               <Fab>3</Fab>
-
-               <IconButton className="arrow" disabled={totalPageSize - 1 === p.currentPage}>
-                  <FontAwesomeIcon icon={faChevronRight} fixedWidth />
-               </IconButton>
-            </Row>
-         </Row> */
       );
    }
 }

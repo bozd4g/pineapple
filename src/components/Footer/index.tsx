@@ -14,10 +14,11 @@ class Footer extends React.Component<IFooterProps> {
    }
 
    render() {
+      const t = this.props.type;
       return (
-         <div className="footer" style={{ color: this.props.type === 'primary' ? 'white' : 'transparent' }}>
-            <ReactSVG className="footer-separator" src={IndexSVG} style={{ display: this.props.type === 'primary' ? 'block' : 'none' }} />
-            <Grid className="footer-container" container spacing={24} style={{ background: this.props.type === 'primary' ? 'white' : 'transparent' }}>
+         <div className="footer" style={{ color: t === 'primary' ? 'white' : 'transparent' }}>
+            <ReactSVG className="footer-separator" src={IndexSVG} style={{ display: t === 'primary' ? 'block' : 'none' }} />
+            <Grid className="footer-container" container style={{ background: t === 'primary' ? 'white' : 'transparent', marginTop: t === 'secondary' ? '3%': 0 }}>
                <Grid className="footer-text" xs={12} sm={12} md={6} lg={6} xl={6} container alignItems="center">
                   <p>
                      I don't know what’s happening here.

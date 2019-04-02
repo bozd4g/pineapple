@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 class ServiceManager {
-   private readonly baseUrl = 'URL_WILL_BE_HERE';
+   private readonly baseUrl = 'https://bozd4g.azurewebsites.net/api/';
 
    public async get(params: string): Promise<any> {
       return await axios

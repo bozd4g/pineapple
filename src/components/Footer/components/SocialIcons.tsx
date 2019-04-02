@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faMedium, faLinkedin, faSpotify, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faTwitter, faMedium, faLinkedin, faSpotify, faGithub, faGoodreadsG } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Grid } from '@material-ui/core';
 import './index.css';
@@ -43,6 +43,11 @@ class SocialIcons extends React.Component<ISocialIconsProps> {
       {
          id: 'github',
          icon: faGithub,
+         href: '#',
+      },
+      {
+         id: 'goodreads',
+         icon: faGoodreadsG,
          href: '#',
       },
       {

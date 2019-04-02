@@ -2,7 +2,6 @@
 
 .title {
   position: fixed;
-  color: white;
   top: 3%;
   margin-left: 8%;
   z-index: 999;
@@ -12,6 +11,9 @@
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
+  margin: 0;
+  line-height: 40px;
+  word-wrap: break-word;
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;

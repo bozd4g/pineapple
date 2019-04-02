@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
-.detail {
-    position: relative;
-}
+.detail {}
 
 .detail .cover {
     max-height: 70vh;
@@ -21,6 +19,7 @@
     margin: 0;
     margin-top: -30vh;
     position: relative;
+    padding: 0 5%;
 }
 
 .detail .post-detail .wrapper {
@@ -31,6 +30,7 @@
     padding: 2% 4%;
     text-align: left;
     line-height: 15px;
+    min-height: 300px;
 }
 
 .detail .post-detail .wrapper h1 {
@@ -38,6 +38,8 @@
     font-weight: 700;
     font-size: 3.5em;
     color: #464242;
+    margin: 0;
+    line-height: 60px;
 }
 
 .detail .post-detail .wrapper h5 {
@@ -54,6 +56,7 @@
     font-weight: 400;
     font-size: 1.2em;
     line-height: normal;
+    width: 100%;
 }
 
 .detail .post-detail .wrapper p b {
